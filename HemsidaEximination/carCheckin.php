@@ -4,7 +4,7 @@
 
 if (isset($_POST['register_btn']))
 {
-    $db = mysqli_connect('localhost', 'mima0019','S12hiraz!', 'mima0019'); // min kontakt med databasen
+    $db = mysqli_connect('localhost', 'Hidden','Hidden!', 'Hidden'); // min kontakt med databasen
    
     
     $sqlinsert = "INSERT INTO BilartillSalu (Regnr, Marke, Modell, Vaxellada, Miltal, Kostnad)
