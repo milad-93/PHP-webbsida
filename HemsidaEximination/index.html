@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="design.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+    .minbild 
+    {
+        height: 400px;
+        width:600px;
+        border:20px;
+        border-color: black;
+        border-style: solid;
+        border-top:30px;
+        border-top-color:blue;
+        border-top-style: solid;
+        border-left:100px;
+        border-left-color: blueviolet;
+        border-left-style:solid;
+        border-right:60px solid cyan;
+        padding: 50px;
+        margin:50px;
+        border-radius:75px;     
+    }
+</style>    
+</head>
+<body>
+
+    <div class="navbar">
+            <a href="index.html">Hem</a>
+            <a href="carCheckin.php">Checka in din bil - Privatkund</a>
+            <a href="register.php">Registrera - Personal</a>  
+        <div class="dropdown">
+            <button class="dropbtn">Personal 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="showRegistredCars.php">Se registrerade bilar (inloggning krävs)</a>
+              <a href="login.php">Logga in</a>
+              <a href="logout.php">Logga ut</a>
+      
+            </div>
+        </div> 
+    </div>
+ 
+        <h1>Välkommen till milads bilservice</h1>
+
+    
+        <center>
+            <p id="erbjudande" style="border-bottom-color: black; font-size: 30px; font-style: italic">I våra fräscha lokaler utförs service med kvalité<a href="carCheckin.php">- Checka in din bil idag</a></p>
+            <img src="bilar.jpg" class="minbild">
+       </center>
+            
+   
+    
+    <hr>
+    <footer>
+    milad copyright
+
+    </footer>
+    
+    
+
+</body>
+</html>
+
+
+   <script>
+        $(document).ready(function(){
+            $("#erbjudande").mousedown(function(){
+                alert("checka in bilen idag! och få 20% rabatt på din service!");
+                window.location.replace("carCheckin.php");
+            });
+        });
+    </script>
+
